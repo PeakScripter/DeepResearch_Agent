@@ -251,23 +251,7 @@ class PapersWithCodeSearchTool:
 class GoogleScholarSearchTool:
     
     def search(self, query: str, max_results: int = 5) -> str:
-        try:
-            search_suggestions = [
-                f"Google Scholar search for: {query}",
-                "Note: Implement proper Google Scholar API integration for full functionality",
-                f"Expected results: {max_results} papers"
-            ]
-            
-            return json.dumps({
-                "search_query": query,
-                "max_results": max_results,
-                "note": "Google Scholar integration needs proper API setup",
-                "suggestions": search_suggestions
-            }, indent=2)
-            
-        except Exception as e:
-            logger.error(f"Error during Google Scholar search for '{query}': {e}")
-            return f"Error performing Google Scholar search: {e}"
+        return ""
 
 class DeepResearchAssistant:
     
